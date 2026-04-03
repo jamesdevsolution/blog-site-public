@@ -41,6 +41,10 @@ const page = async () => {
               blogs
             </Link>{" "}
             about what I’m learning and experiences from my daily life.
+            <br></br>
+            {" "}Feel free to visit my developer site! <Link href="https://jamestalamo.com" className="text-blue-600 dark:text-blue-400 hover:underline">
+              jamestalamo.com
+            </Link>{" "}
           </p>
         </section>
 
