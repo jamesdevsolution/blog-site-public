@@ -4,6 +4,7 @@ import Header from "./header";
 import { inter, geologica } from "@/lib/fonts";
 import { ThemeProvider } from "@/components/darkmode/themeprovider";
 import Footer from "./footer";
+import TouchInit from "./touch-init";
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -27,6 +28,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <TouchInit />
           <Header />
           {children}
           <Footer />
