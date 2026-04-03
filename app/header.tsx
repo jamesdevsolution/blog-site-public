@@ -15,7 +15,7 @@ const navLinkClass = 'text-bg  hover:text-foreground hover:bg-muted rounded-sm p
 
 const Header = () => {
     return (
-        <div className='dark:bg-[#1a1d1e] bg-[#ffffff] w-full h-[65px] fixed top-0 left-0 border-b flex items-center px-10'>
+        <div className='dark:bg-[#1a1d1e] bg-[#ffffff] w-full h-[65px] fixed top-0 left-0 border-b flex items-center px-10 z-50'>
             <div className='max-w-xl w-full mx-auto flex items-center justify-between'>
 
                 <Link href='/' className='rounded-[100%]  flex items-center justify-center'>
