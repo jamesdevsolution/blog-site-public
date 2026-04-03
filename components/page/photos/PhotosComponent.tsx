@@ -26,6 +26,7 @@ const PhotosComponent = async () => {
                                 day: "numeric",
                             })}
                         </span>
+                        <div className=' h-[100%] w-[100%] absolute '></div>
                     </div>
                 </div>
             ))}

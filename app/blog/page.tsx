@@ -14,7 +14,7 @@ const page = () => {
             <div className="max-w-xl w-full mx-auto pt-12 flex flex-col gap-8">
 
                 <div className="text-center">
-                    <h1 className={`${geologica.className} text-4xl font-bold dark:text-white mb-3`}>
+                    <h1 className={`${geologica.className} text-3xl font-bold dark:text-white mb-3`}>
                         Blog
                     </h1>
                     <p className={`${alegreyna.className} text-gray-700 dark:text-gray-300 text-2xl leading-relaxed`}>

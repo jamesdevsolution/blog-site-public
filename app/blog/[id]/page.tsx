@@ -53,15 +53,13 @@ const IdPage = async ({ params }: { params: { id: string } }) => {
 
                     <Suspense fallback={
                         <div className='flex flex-col gap-4'>
-                            <Skeleton className='h-[30px] w-[200px] ' />
-                            <Skeleton className='h-[20px] w-[400px] ' />
-                            <Skeleton className='h-[20px] w-[400px] ' />
-                            <Skeleton className='h-[20px] w-[400px] ' />
+                            <Skeleton className='h-[30px] w-2' />
+                            <Skeleton className='h-[20px] w-full max-w-[400px]' />
+                            <Skeleton className='h-[20px] w-full max-w-[400px]' />
+                            <Skeleton className='h-[20px] w-full max-w-[400px]' />
                         </div>
                     }>
-
                         <Content id={id} />
-
                     </Suspense>
                 </div>
 
