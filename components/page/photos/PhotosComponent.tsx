@@ -1,9 +1,9 @@
 import { supabase } from "@/lib/supabase"
-import { unstable_noStore as noStore } from "next/cache"
 import { Skeleton } from "@/components/ui/skeleton"
-const PhotosComponent = async () => {
-    noStore()
 
+export const revalidate = 300 // re-fetch every 5 minutes
+
+const PhotosComponent = async () => {
     const { data: photos } = await supabase
         .from("photos")
         .select("id, url, created_at")
@@ -30,7 +30,7 @@ const PhotosComponent = async () => {
                                 day: "numeric",
                             })}
                         </span>
-                        <div className='z-10 h-[100%] w-[100%] absolute '></div>
+                        <div className='z-10 h-[100%] w-[100%] absolute'></div>
                     </div>
                 </div>
             ))}

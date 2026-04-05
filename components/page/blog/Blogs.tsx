@@ -4,6 +4,8 @@ import Link from 'next/link'
 
 import { timeAgo } from '@/lib/reusable/time'
 
+export const revalidate = 300
+
 type Blog = {
     id: number,
     title: string,
