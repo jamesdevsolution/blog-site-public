@@ -1,8 +1,6 @@
 import { supabase } from "@/lib/supabase"
 import { geologica, alegreyna } from "@/lib/fonts"
 
-export const revalidate = 300
-
 const renderContent = (text: string) => {
     const urlRegex = /(https?:\/\/[^\s]+)/g
     return text.split('\n').map((line, i) => {

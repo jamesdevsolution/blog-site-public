@@ -1,9 +1,10 @@
 import { geologica, alegreyna } from "@/lib/fonts"
 import Link from "next/link"
 import { supabase } from "@/lib/supabase"
-import { unstable_noStore as noStore } from "next/cache"
 
 import type { Metadata } from "next"
+
+export const revalidate = 300
 
 export const metadata: Metadata = {
     title: "About — James",
@@ -16,7 +17,6 @@ const Tag = ({ label, like }: { label: string, like: boolean }) => (
 )
 
 const page = async () => {
-    noStore()
 
     const [{ data: likes }, { data: dislikes }] = await Promise.all([
         supabase.from("likes").select("id, value").order("created_at", { ascending: true }),

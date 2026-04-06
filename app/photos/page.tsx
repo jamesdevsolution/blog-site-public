@@ -4,6 +4,8 @@ import { Skeleton } from "@/components/ui/skeleton"
 import { Suspense } from "react"
 import PhotosComponent from "@/components/page/photos/PhotosComponent"
 
+export const revalidate = 300
+
 export const metadata: Metadata = {
     title: "Photos — James",
 }

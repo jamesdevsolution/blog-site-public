@@ -3,6 +3,8 @@ import { geologica, alegreyna } from "@/lib/fonts"
 import Link from "next/link"
 import { Suspense } from "react"
 
+export const revalidate = 300
+
 const ArrowUpRight = () => (
   <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.8">
     <path d="M2 12L12 2M12 2H5M12 2v7" />

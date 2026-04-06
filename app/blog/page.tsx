@@ -8,6 +8,8 @@ export const metadata: Metadata = {
     title: "Blog — James",
 }
 
+export const revalidate = 300
+
 const page = () => {
     return (
         <div className="bg-[#f0f2f4] dark:bg-[#151718] min-h-screen px-10">

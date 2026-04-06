@@ -1,8 +1,6 @@
 import { supabase } from "@/lib/supabase"
 import { Skeleton } from "@/components/ui/skeleton"
 
-export const revalidate = 300 // re-fetch every 5 minutes
-
 const PhotosComponent = async () => {
     const { data: photos } = await supabase
         .from("photos")
